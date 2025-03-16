@@ -8,10 +8,10 @@ async function main() {
     const todoList = await TodoList.deploy();
 
     console.log("Waiting for deployment...");
-    await todoList.waitForDeployment();
+    await todoList.deployed();
 
     console.log("Getting contract address...");
-    const contractAddress = await todoList.getAddress();
+    const contractAddress = await todoList.address;
     
     console.log(`✅ TodoList deployed to: ${contractAddress}`);
 }
@@ -19,6 +19,6 @@ async function main() {
 main()
     .then(() => process.exit(0))
     .catch((error) => {
-        console.error("🚨 Deployment error:", error);
+        console.log("🚨 Deployment error:", error);
         process.exit(1);
     });

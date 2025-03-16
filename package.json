@@ -1,10 +1,29 @@
 {
-  "name": "hardhat-project",
+  "name": "todolistsmartcontract",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsleycj/todoListSmartContract.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kingsleycj/todoListSmartContract/issues"
+  },
+  "homepage": "https://github.com/kingsleycj/todoListSmartContract#readme",
+  "description": "",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
     "@nomicfoundation/hardhat-verify": "^2.0.13",
     "@nomiclabs/hardhat-ethers": "^2.2.3",
     "dotenv": "^16.4.7",
-    "ethers": "^5.7.2"
+    "ethers": "^5.7.2",
+    "hardhat": "^2.22.19"
   }
 }
